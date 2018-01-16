@@ -4,5 +4,5 @@ RUN apt-get update && \
     apt-get install -y curl && \
     apt-get clean
 
-RUN curl -Lo /usr/bin/jfrog-cli https://api.bintray.com/content/jfrog/jfrog-cli-go/$latest/jfrog-cli-linux-386/jfrog?bt_package=jfrog-cli-linux-386
-RUN chmod +x /usr/bin/jfrog-cli
+RUN curl -Lo /usr/bin/jfrog https://api.bintray.com/content/jfrog/jfrog-cli-go/\$latest/jfrog-cli-linux-amd64/jfrog?bt_package=jfrog-cli-linux-amd64
+RUN chmod +x /usr/bin/jfrog
